@@ -1,4 +1,4 @@
-$('.popular').slick({
+$('.articles-more-articles__inner').slick({
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -66,3 +66,15 @@ $('.popular').slick({
         // instead of a settings object
       ]
 })
+
+
+const slignSlides = () => {
+  let slides = document.querySelectorAll('.article-main-item.slick-slide')
+  let slidesWrap = document.querySelector('.slick-track')
+
+  if (slides.length < 2) {
+    slidesWrap.classList.add('align-slides')
+  }
+
+}
+slignSlides()
